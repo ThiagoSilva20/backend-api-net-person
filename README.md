@@ -21,22 +21,22 @@ dotnet tool install --global dotnet-ef
 dotnet restore
 ```
 
-## Rodar a aplicação
+## Rodar a aplicação 
 
 ```bash
 dotnet watch run
+```
+## Migrations (Entity Framework)
+
+```bash
+# Caso precise criar uma nova migration
+dotnet ef migrations add NomeDaMigration
+
+# Aplicar migrations ja existentes ao banco
+dotnet ef database update
 ```
 
 Em **modo desenvolvimento**:
 - API: `https://localhost:5xxx` ou `http://localhost:5xxx` (porta no terminal)
 - Documentação OpenAPI: `/openapi/v1.json`
 
-## Migrations (Entity Framework)
-
-```bash
-# Criar uma nova migration
-dotnet ef migrations add NomeDaMigration
-
-# Aplicar migrations ao banco
-dotnet ef database update
-```

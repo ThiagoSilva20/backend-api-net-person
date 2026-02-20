@@ -29,7 +29,7 @@ namespace backend_api_net.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("person");
+                    b.ToTable("Person");
                 });
 #pragma warning restore 612, 618
         }
